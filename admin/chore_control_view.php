@@ -14,7 +14,7 @@ include "../settings/core.php";
     <div id="sidebar">
         <a href="../view/dashboard.php">Home</a>
         <a href="../admin/chore_control_view.php">Manage chores</a>
-        <a href="#" onclick="loadContent('../view/assign_chore.php')">Assign chores</a>
+        <a href="#" onclick="loadContent('../admin/assign_chore_view.php')">Assign chores</a>
         <a href="../login/logout_view.php">Log Out</a>
     </div>
 
@@ -22,7 +22,7 @@ include "../settings/core.php";
         <h2>Chore List</h2>
         <div class="heading">
             <button name="showFormBtn" id="showFormBtn" onclick="showForm()">Add a chore</button>
-            <button name="assign-button" id="assign-btn">Assign to chore</button>
+            <button name="assign-button" id="assign-btn" onclick="loadContent('../admin/assign_chore_view.php')">Assign to chore</button>
         </div>
         <?php
         include "../functions/chore_fxn.php";

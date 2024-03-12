@@ -26,6 +26,7 @@ if (isset($_POST['login-button'])) {
             // Passwords match, login successful, set user_id & role_id
             $_SESSION['user_id'] = $row['pid'];
             $_SESSION['role_id'] = $row['rid'];
+            $_SESSION['fam_id'] = $row['fid'];
             echo '<script>alert("login successful");</script>';
             echo '<script>window.location.href="../view/dashboard.php";</script>';
         } else {

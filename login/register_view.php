@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "../functions/select_role_fxn.php"
+include "../functions/select_role_fxn.php";
 ?>
 
 <!DOCTYPE html>

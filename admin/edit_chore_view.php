@@ -31,6 +31,10 @@ $gotten_chore = get_a_chore($ret_var);
 <!--        <script>loadContent("../admin/edit_chore_view.php")</script>-->
         <form action="../actions/edit_a_chore_action.php" method="POST" name="edit-chore-form" id="edit-chore-form">
             <h1>Edit a chore</h1>
+            <label for="chore-id">
+                Chore ID
+                <input type="text" name="chore-id" id="chore-id" value="<?php echo $gotten_chore['cid']; ?>" readonly />
+            </label>
             <label for="new-chore-name">
                 Update chore name
                 <input type="text" name="new-chore-name" id="new-chore-name" placeholder="New Chore Name"
